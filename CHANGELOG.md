@@ -9,12 +9,14 @@ Adhere to the following format:
 `- [Name of Jira-story or subtask](link to Jira-story): Description of the completed work`
 Example-entry:
 
-- [TES-4](https://sunepoulsen.atlassian.net/browse/TES-4): Create a general logging library for Spring Boot
+- [TES-11](https://sunepoulsen.atlassian.net/browse/TES-11): Library for integration between REST services
 
 For release-dates, use date-format: YYYY-MM-DD
 
 ## Unreleased work
 ### Features
+
+- [TES-11](https://sunepoulsen.atlassian.net/browse/TES-11): Library for integration between REST services
 
 ### Fixed
 
