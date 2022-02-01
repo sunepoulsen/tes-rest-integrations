@@ -34,6 +34,13 @@ java {
 }
 
 dependencies {
+    // Tech Easy Solutions
+    api "${project.group}:tes-rest-models:${project.property('tes-rest-models.version')}"
+    api "${project.group}:tes-json:${project.property('tes-json.version')}"
+
+    // Rx Java2
+    api "io.reactivex.rxjava2:rxjava:${project.property('rxjava2.version')}"
+
     // Lombok
     compileOnly "org.projectlombok:lombok:${project.property('lombok.version')}"
     annotationProcessor "org.projectlombok:lombok:${project.property('lombok.version')}"
@@ -47,10 +54,14 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-engine:${project.property('junit-jupiter.version')}"
 
     // Spock
-    testImplementation "org.codehaus.groovy:groovy:${project.property('groovy.version')}"
+    testImplementation "org.codehaus.groovy:groovy-all:${project.property('groovy.version')}"
     testImplementation "org.spockframework:spock-core:${project.property('spock-core.version')}"
     testImplementation "cglib:cglib-nodep:${project.property('cglib-nodep.version')}"
     testImplementation "org.objenesis:objenesis:${project.property('objenesis.version')}"
+
+    // WireMock
+    testImplementation "com.github.tomakehurst:wiremock:${project.property('wiremock.version')}"
+
 }
 
 test {
