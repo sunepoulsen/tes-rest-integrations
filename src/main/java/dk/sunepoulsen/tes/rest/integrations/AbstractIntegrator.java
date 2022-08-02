@@ -1,8 +1,8 @@
 package dk.sunepoulsen.tes.rest.integrations;
 
 import dk.sunepoulsen.tes.rest.integrations.exceptions.ClientException;
-import io.reactivex.Completable;
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.Completable;
+import io.reactivex.rxjava3.core.Single;
 
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;

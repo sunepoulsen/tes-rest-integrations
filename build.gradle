@@ -35,33 +35,32 @@ java {
 
 dependencies {
     // Tech Easy Solutions
-    api "${project.group}:tes-rest-models:${project.property('tes-rest-models.version')}"
-    api "${project.group}:tes-json:${project.property('tes-json.version')}"
+    api "${project.group}:tes-rest-models:1.0.1-SNAPSHOT"
+    api "${project.group}:tes-json:1.0.1-SNAPSHOT"
 
     // Rx Java2
-    api "io.reactivex.rxjava2:rxjava:${project.property('rxjava2.version')}"
+    api 'io.reactivex.rxjava3:rxjava:3.1.5'
 
     // Lombok
-    compileOnly "org.projectlombok:lombok:${project.property('lombok.version')}"
-    annotationProcessor "org.projectlombok:lombok:${project.property('lombok.version')}"
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
     // Logging
-    implementation "ch.qos.logback:logback-classic:${project.property('logback.version')}"
-    implementation "org.slf4j:log4j-over-slf4j:${project.property('log4j-over-slf4j.version')}"
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+    implementation 'org.slf4j:log4j-over-slf4j:1.7.36'
 
     // JUnit
-    testImplementation "org.junit.vintage:junit-vintage-engine:${project.property('junit-jupiter.version')}"
-    testImplementation "org.junit.jupiter:junit-jupiter-engine:${project.property('junit-jupiter.version')}"
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.9.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 
     // Spock
-    testImplementation "org.codehaus.groovy:groovy-all:${project.property('groovy.version')}"
-    testImplementation "org.spockframework:spock-core:${project.property('spock-core.version')}"
-    testImplementation "cglib:cglib-nodep:${project.property('cglib-nodep.version')}"
-    testImplementation "org.objenesis:objenesis:${project.property('objenesis.version')}"
+    testImplementation 'org.codehaus.groovy:groovy-all:3.0.11'
+    testImplementation 'org.spockframework:spock-core:2.1-groovy-3.0'
+    testImplementation 'cglib:cglib-nodep:3.3.0'
+    testImplementation 'org.objenesis:objenesis:3.2'
 
     // WireMock
-    testImplementation "com.github.tomakehurst:wiremock:${project.property('wiremock.version')}"
-
+    testImplementation 'com.github.tomakehurst:wiremock:2.27.2'
 }
 
 test {

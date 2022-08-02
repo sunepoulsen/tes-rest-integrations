@@ -28,7 +28,7 @@ class ResponseHandlerSpec extends Specification {
             String body = new JsonBuilder(
                 [
                     status: ServiceHealthStatusCode.UP.toString()
-                ]).toPrettyString()
+                ])
 
         when:
             String result = this.sut.verifyResponseAndExtractBody(response)

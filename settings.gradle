@@ -1,7 +1,7 @@
 pluginManagement {
     plugins {
-        id 'org.jetbrains.changelog' version "${jetbrainsChangelogVersion}"
-        id 'net.researchgate.release' version "${researchgateReleaseVersion}"
+        id 'org.jetbrains.changelog' version '1.3.1'
+        id 'net.researchgate.release' version '2.8.1'
     }
 }
 
